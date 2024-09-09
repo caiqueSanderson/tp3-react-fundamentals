@@ -1,9 +1,9 @@
 import "./styles.css";
 import Greeting from "./Greeting/Greeting";
 
-export default function App() {
-  const name = prompt('Insira seu nome: ')
-    
+const name = prompt('Insira seu nome: ')
+
+export default function App(){
   return (
     <div className="container">
       <Greeting name={name}/>
