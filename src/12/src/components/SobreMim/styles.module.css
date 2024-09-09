@@ -1,0 +1,31 @@
+.text_line {
+    text-decoration: line-through;
+    font-size: 0.7rem;
+    margin-right: 10px;
+}
+
+.container {
+    background-color: #000000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.header_about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-bottom: 1rem;
+}
+
+.container_about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.description {
+    width: 60%;
+}

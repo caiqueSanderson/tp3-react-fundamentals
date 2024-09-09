@@ -1,0 +1,25 @@
+.text_line {
+    text-decoration: line-through;
+    font-size: 0.7rem;
+    margin-right: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container_contact {
+    background-color: #000000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+.header_contact {
+    margin-bottom: 1rem;
+}
+
+.list_contact > li{
+    list-style: none;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,10 @@
+.card {
+    padding: 5px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card h2{
+    text-align: center;
+}

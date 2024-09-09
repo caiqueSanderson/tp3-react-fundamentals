@@ -1,0 +1,12 @@
+.card {
+    width: 200px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.image {
+    max-width: 60%;
+}

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+.header-logo {
+    position: absolute;
+    left: 20px;
+    height: 60px;
+}
+
+.header-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+}

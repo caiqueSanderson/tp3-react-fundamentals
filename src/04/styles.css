@@ -1,0 +1,101 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilizacao geral */
+
+.label{
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.input:focus {
+    border-color:#FFD700; 
+}
+
+/* Estilizacao especifica */
+
+.form {
+    width: 90vw;
+    align-content: center;
+}
+
+.form label {
+    margin: 20px 0;
+}
+
+.form input {
+    height: 30px;
+    border-radius: 5px;
+
+    padding: 0 5px;
+}
+
+.name_product {
+    width: calc(100% - 10px);
+}
+
+.title_register {
+    text-align: center;
+}
+
+.section_price, .section_select  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section_price label, .section_select label {
+    width: 45%;
+}
+
+.section_price input, .section_select input {
+    width: calc(100% - 10px);
+}
+
+label[for="description"] {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+
+    border-radius: 5px;
+    font-size: 1rem;
+
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+
+    background-color: #FFD700; 
+    color: #1a1a1a; 
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a1a1a; 
+    color: #FFD700;
+}
