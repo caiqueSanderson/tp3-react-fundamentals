@@ -1,13 +1,13 @@
 import './App.css'
 
-import SobreMim from './components/SobreMim/SobreMim';
-import Habilidades from './components/Habilidades/Habilidades';
+import List from './components/List/List'
 
 export default function App() {
+  const numbers = [];
+
   return (
     <div className='container_components'>
-      <SobreMim />
-      <Habilidades />
+      <List numbers={numbers}/>
     </div>
   )
 }

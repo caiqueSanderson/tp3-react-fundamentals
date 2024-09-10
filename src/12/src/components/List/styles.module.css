@@ -1,0 +1,11 @@
+.cardMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: beige;
+    color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}

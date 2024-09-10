@@ -1,18 +1,28 @@
-import './App.css'
+import './App.css';
+import { useState, useEffect } from 'react';
 
-import SobreMim from './components/SobreMim/SobreMim';
-import Habilidades from './components/Habilidades/Habilidades';
-import Projetos from './components/Projetos/Projetos';
-import Contato from './components/Contato/Contato';
+import ProfileCard from './components/ProfileCard/ProfileCard';
 
 export default function App() {
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
+  const [ageBoolean, setAgeBoolean] = useState(false);
+
+  useEffect(() => {
+    const userName = prompt('Digite o seu nome: ');
+    const userAge = prompt('Digite a sua idade: ');
+
+    if (userName) setName(userName);
+    if (userAge && !isNaN(userAge)) {
+      const parsedAge = Number(userAge);
+      setAge(parsedAge);
+      setAgeBoolean(true);
+    }
+  }, []);
+
   return (
-    <div className='container_components'>
-      <SobreMim />
-      <Habilidades />
-      <Projetos title="Website Meet Delights" description="Site de e-commerce, responsivo e funcional, desenvolvido em JavaScript, HTML e CSS"/>
-      <Projetos title="Meeting Dev" description="Site organizacional para times e empresas que querem trabalhar utilizando a metodologia Ágil Scrum, site responsivo e funcional, desenvolvido em React"/>
-      <Contato />
+    <div>
+      <ProfileCard name={name} ageBoolean={ageBoolean} age={age} />
     </div>
-  )
+  );
 }
