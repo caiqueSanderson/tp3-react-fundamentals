@@ -1,7 +1,9 @@
-import ToDoList from "./components/ToDoList";
+import ToDoItem from "./ToDoItem/ToDoItem"
 import { useState } from "react"
 
-export default function App() {
+import "./styles.css";
+
+export default function ToDoList() {
     const [task, setTask] = useState("");
     const [formData, setFormData] = useState({
         date: "hoje",
@@ -21,14 +23,6 @@ export default function App() {
         }
     }
 
-    function onTaskDelete(taskToDelete) {
-        const newTasks = formData.task.filter((t) => t !== taskToDelete);
-        setFormData({
-            ...formData,
-            task: newTasks,
-        });
-    }
-
     return (
         <div>
             <form className="form-task" action="" onSubmit={saveTask}>
@@ -40,8 +34,13 @@ export default function App() {
                 />
                 <button>Salvar</button>
             </form>
+            <ToDoItem task="TP1" />
+            <div>
+                {formData.task.map((taskData, index) => (
+                    <ToDoItem key={index} task={taskData} /> 
+                ))}
+            </div>
 
-            <ToDoList tasks={formData.task} onTaskDelete={onTaskDelete}/>
         </div>
     )
 }

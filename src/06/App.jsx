@@ -1,16 +1,11 @@
 import "./styles.css";
 
-import Header from "./component/Header/Header";
-import Card from "./component/Card/Card";
-import Footer from "./component/Footer/Footer";
+import ToDoList from "./components/ToDoList";
 
 export default function App() {
     return (
         <div>
-            <Header/>
-            <Card/>
-            <Card/>
-            <Footer/>
+            <ToDoList />
         </div>
     )
 }

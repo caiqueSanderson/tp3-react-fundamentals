@@ -21,6 +21,13 @@ export default function App() {
         }
     }
 
+    function onTaskUpdate(oldTask, newTask) {
+        const updatedTasks = props.tasks.map((task) => 
+            task === oldTask ? newTask : task
+        );
+        props.onTaskUpdate(updatedTasks); 
+    }
+
     function onTaskDelete(taskToDelete) {
         const newTasks = formData.task.filter((t) => t !== taskToDelete);
         setFormData({
@@ -41,7 +48,7 @@ export default function App() {
                 <button>Salvar</button>
             </form>
 
-            <ToDoList tasks={formData.task} onTaskDelete={onTaskDelete}/>
+            <ToDoList tasks={formData.task} onTaskDelete={onTaskDelete} onTaskUpdate={onTaskUpdate}/>
         </div>
     )
 }

@@ -1,0 +1,10 @@
+.task{
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.date {
+    padding-right: 30vw;
+    border-right: 2px solid black;
+}
