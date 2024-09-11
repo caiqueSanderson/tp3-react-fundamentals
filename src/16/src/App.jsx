@@ -1,12 +1,14 @@
 import './App.css';
 
-import Product from './components/Product/Product';
+import StatusBadge from './components/StatusBadge/StatusBadge';
 
 export default function App() {
   return (
     <div>
-      <Product name="Jordan" price="889,90" />
-      <Product name="Air Force" price="500,90" description="Tenis confortavel, para eventos casuais"/>
+      <StatusBadge status='ativo'/>
+      <StatusBadge status='inativo'/>
+      <StatusBadge status='pendente'/>
+      <StatusBadge status=''/>
     </div>
   );
 }

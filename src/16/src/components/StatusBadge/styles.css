@@ -1,0 +1,23 @@
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  .inactive {
+    background-color: grey;
+    color: white;
+  }
+  
+  .pending {
+    background-color: orange;
+    color: white;
+  }
+  
